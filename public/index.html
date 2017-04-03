@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+  </head>
+
+  <body>
+
+    <div class="messages_container">
+      <ul id="messages"></ul>
+    </div>
+
+    <form class="chat_form" action="" method="get">
+      <input id="m" /><button>Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+    var socket = io();
+
+    $('.chat_form').submit(() => {
+      socket.emit('msg', $('#m').val());
+      $('#m').val('');
+
+      return false;
+    });
+
+    socket.on('msg', (msg) => {
+      $('#messages').append($('<li>').text(msg));
+    });
+
+    socket.on('newuser', () => {
+      $('#messages').append($('<li>').addClass('new_user').text('A new user has connected.'));
+    });
+
+    </script>
+  </body>
+</html>
