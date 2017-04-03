@@ -1,0 +1,15 @@
+.messages_container {
+  background-color: #475577;
+  margin: 12px;
+  margin-bottom: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.message {
+  background-color: #EFEFEF;
+  color: #28324e;
+  margin: 12px;
+  padding: 12px;
+}

@@ -1,0 +1,24 @@
+.chat_form {
+  display: flex;
+  padding: 12px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 54px;
+}
+
+.chat_form>input {
+  padding: 0px 12px 0px 12px;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.chat_form>button {
+  width: 48px;
+  height: 100%;
+  color: #EFEFEF;
+  background-color: #9365B8;
+  border: none;
+}
