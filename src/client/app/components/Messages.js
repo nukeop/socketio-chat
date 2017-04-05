@@ -12,6 +12,7 @@ export default class Messages extends React.Component {
           return (
             <div className={styles.message}>
               {el.text}
+              <hr />
             </div>
           );
         })}

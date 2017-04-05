@@ -1,15 +1,20 @@
 .messages_container {
-  background-color: #475577;
+  background-color: #34495e;
+  color: #EFEFEF;
   margin: 12px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   padding: 12px;
   box-sizing: border-box;
   height: 100%;
+  overflow-y: scroll;
 }
 
 .message {
-  background-color: #EFEFEF;
-  color: #28324e;
-  margin: 12px;
-  padding: 12px;
+  margin: 0px 12px;
+}
+
+.message>hr {
+  margin: 12px 0px;
+  border-color: #4c5a69;
+  border-top: 0;
 }

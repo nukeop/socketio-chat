@@ -15,12 +15,15 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <MessagesContainer
-          socket={this.state.socket}
-        />
-        <ChatInputContainer
-          socket={this.state.socket}
-        />
+
+        <div className={styles.chat_container}>
+          <MessagesContainer
+            socket={this.state.socket}
+          />
+          <ChatInputContainer
+            socket={this.state.socket}
+          />
+        </div>
       </div>
     );
   }
