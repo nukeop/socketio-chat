@@ -18,3 +18,10 @@
   border-color: #4c5a69;
   border-top: 0;
 }
+
+.nickname {
+  background-color: rgba(236, 240, 241, 0.125);
+
+  padding: 3px 6px;
+  border-radius: 6px;
+}
